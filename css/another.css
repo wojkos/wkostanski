@@ -1,0 +1,29 @@
+html, body {
+    background-color: #f5ffd8;
+  }
+
+.top_img {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: calc(50% - 150px);
+    right: calc(50% - 150px);
+    animation: shake 5s linear infinite;
+}
+.bottom_img {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    top: calc(50% - 250px);
+    right: calc(50% - 250px);
+    animation: spin 20s linear infinite;
+    }
+
+@keyframes spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+@keyframes shake {
+    0%, 100% { transform: rotate(-45deg); }
+    50% { transform: rotate(45deg); }
+}
